@@ -27,6 +27,7 @@ public class DispatcherThread implements Runnable{
 
 	    public void run(){
 		    // TODO Auto-generated method stub
+	    	System.out.println("inside run");
 		    System.out.println("Fetch the files from the remote folders");
 		    ChannelSftp sftp = connection.remoteConnect();
 		    getAllFiles(sftp,connection.getSource());
